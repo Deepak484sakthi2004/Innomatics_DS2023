@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block titleblock %}    
+    
+        {% endblock %}
+    </title>
+    <style>
+        body {
+            background-image: url("https://wphosting.com.au/wp-content/uploads/2018/02/WHP-Blog-Short-URLs.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            ;
+        }
+  </style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home_page') }}">&#127968</a></li>
+                <li><a href="{{ url_for('history_page') }}">&#128220</a></li>
+            </ul>
+        </nav>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+            }
+
+            li {
+                float: left;
+            }
+
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                    li a:hover {
+                        background-color: rgb(0, 0, 0);
+                    }
+        </style>
+
+        {% block bodyblock %}
+
+        {% endblock %}
+</body>
+</html>

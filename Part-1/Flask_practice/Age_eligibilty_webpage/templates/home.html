@@ -1,0 +1,18 @@
+{%entends 'layout.html' %}
+
+
+
+{%block title%}Home
+        {%endblock%}
+
+{%block body%}
+
+<h2>Welocome to the sign up page!!</h2>
+<form action="{{url_for('home_f')}}" method='post'>
+        
+    <input type="text" name="user"  placeholder="Username">
+    <input type="text" name="age"  placeholder="Age">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" value="login">
+
+{%endblock%}

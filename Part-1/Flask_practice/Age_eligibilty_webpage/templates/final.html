@@ -1,0 +1,18 @@
+{%entends 'layout.html' %}
+
+
+
+{%block title%}result
+        {%endblock%}
+
+        {%block body%}
+{%if age<=18%}
+<h1>{{user}}, pls try an other password</h1>
+{%else%}
+<h1>{{user}}, u can proceed furthur!!</h1>
+{%endif%}
+
+{%for i in user%}
+<b>{{i}} </b>
+ {%endfor%}
+ {%endblock%}

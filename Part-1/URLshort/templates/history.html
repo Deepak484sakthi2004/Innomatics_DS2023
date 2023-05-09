@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block titleblock %}    
+    History
+{% endblock %}
+
+{% block bodyblock %}    
+<h1 align="center"><p style="color:white"><u>List of Shortened URLs</u></p></h1>
+
+<table bgcolor="LightGrey" border="3px" align="center" style="width:90%;">
+    <tr bgcolor="Grey">
+        <th style="font-size: 1.5em;">Original&#128279</th>
+        <th style="font-size: 1.5em;">New Shortened&#128279</th>
+        <th style="font-size: 1.5em;"></th>
+    </tr>
+    {% for i in hist %}
+    <tr>
+        <td><a href={{i.long_url}}>{{i.long_url}}</a></td>
+        <td><a href=http://127.0.0.1:5000/{{i.short_url}}>http://127.0.0.1:5000/{{i.short_url}}</a></td>
+        <td><a href="/delete/{{i.id}}">Remove&#128279</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

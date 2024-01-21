@@ -15,7 +15,7 @@ Welcome to the Laptop Price Prediction project! This project aims to predict the
 
 ## Dataset
 
-For detailed information about the dataset, please refer to the [Dataset Information](./Flipcart laptop.docx) file in the repository.
+For detailed information about the dataset, please refer to the [Dataset Information](./Flipcart%20laptop.docx) file in the repository.
 
 
 ## Features

@@ -56,43 +56,32 @@ For detailed information about the dataset, please refer to the [Dataset Informa
 
 
 
+## Trained Model
 
+The machine learning model has been trained on the dataset and saved as a pickle (pkl) file.
 
+- **Model File:** [laptop_price_prediction_model.pkl](./Model/pipe.pkl)
 
+### Usage
 
+To use the trained model in your Python code:
 
+```python
+import pickle
 
+# Load the model
+with open('Model/laptop_price_prediction_model.pkl', 'rb') as file:
+    model = pickle.load(file)
 
-## Dataset
+# Example prediction
+sample_data = {
+    'MRP': 1200,
+    'Company': 'ExampleBrand',
+    'Processor': 'i7',
+    # Add other features here...
+}
 
-The dataset used for this project includes information about various laptops, such as brand, processor type, RAM size, storage capacity, graphics card, and more. The dataset is available in the `data` folder.
+prediction = model.predict([sample_data])
+print(f'Predicted Price: {prediction[0]}')
+```
 
-## Features
-
-The features used for predicting laptop prices include:
-
-- Brand
-- Processor Type
-- RAM Size
-- Storage Capacity
-- Graphics Card
-- Screen Size
-- Operating System
-- etc.
-
-## Data Preprocessing
-
-Before training the model, the dataset undergoes preprocessing to handle missing values, encode categorical variables, and scale numerical features. The preprocessing steps can be found in the `data_preprocessing.ipynb` notebook.
-
-## Model Training
-
-The machine learning model used for laptop price prediction is trained using a regression algorithm. The training script and model details are available in the `train_model.ipynb` notebook.
-
-## Usage
-
-To predict the price of a laptop using the trained model:
-
-1. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt

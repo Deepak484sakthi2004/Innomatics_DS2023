@@ -37,8 +37,8 @@ This repository contains projects submitted during the InnomaticsDS internship a
 - EDA for the Innomatics test ml_score dataset.
 
 ### Laptop Price Prediction
-- A major project predicting laptop prices with a frontend.
-- Technologies: Python, Machine Learning, Frontend.
+- A major project predicting laptop prices.
+- Technologies: Python, Machine Learning.
 
 ## Part 3
 
@@ -52,15 +52,3 @@ This repository contains projects submitted during the InnomaticsDS internship a
 
 2. **Innomatics Hackathon-EV Data Analysis**
    - Description: EV (Electric Vehicle) data analysis for the Innomatics hackathon.
-
-## How to Use
-
-Provide brief instructions on how to run or use each project. Include any dependencies or setup instructions.
-
-## Contributors
-
-List the contributors to this repository.
-
-## License
-
-Specify the license for the code in your repository.

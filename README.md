@@ -45,7 +45,7 @@ This repository contains projects submitted during the InnomaticsDS internship a
 ### Nearpub Finder Project
 - Project to find nearby pubs using location data.
 
-### Hackathons
+## Hackathons
 
 1. **Hackathon-Data Analysis and Machine Learning**
    - Description: Data analysis and machine learning tasks from a hackathon.
